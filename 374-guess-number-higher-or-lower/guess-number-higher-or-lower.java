@@ -19,7 +19,7 @@ public class Solution extends GuessGame {
             }else if(result==1){
                 start = mid+1 ;
             }else if(result==-1){
-                end = mid;
+                end = mid-1;
             }
         }
         return -1;
