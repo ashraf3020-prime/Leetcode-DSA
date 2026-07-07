@@ -1,11 +1,10 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] ans = {-1,-1};
-           ans[0] = search(nums, target, true);   // first occurrence
-        ans[1] = search(nums, target, false);  // last occurrence
+           int first = search(nums, target, true);
+           int last = search(nums, target, false);
 
-        return ans;
-      
+return new int[]{first, last};
     }
     int search(int[] nums,int target, boolean findStart){
         int ans =-1;
