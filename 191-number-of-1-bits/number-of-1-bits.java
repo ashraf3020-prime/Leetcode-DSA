@@ -5,9 +5,11 @@ class Solution {
 
         while (n != 0) {
 
-            count++;
+            if ((n % 2) == 1) {
+                count++;
+            }
 
-            n = n & (n - 1);
+            n = n / 2;
         }
 
         return count;
